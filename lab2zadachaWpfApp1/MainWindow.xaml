@@ -1,0 +1,52 @@
+﻿<Window x:Class="lab2zadachaWpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab2zadachaWpfApp1"
+        mc:Ignorable="d"
+         Title="Calculator" Height="600" Width="600">
+    <Grid Background="ForestGreen">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock TextWrapping="WrapWithOverflow" Text="123456.78" Grid.ColumnSpan="6" Background="Khaki" TextAlignment="Right" LineHeight="50" FontSize="70" TextTrimming="CharacterEllipsis"/>
+        <Button Content="%" Grid.Column="0" Grid.Row="1" Background="#FFB3B2B2" BorderBrush="#FF121111"/>
+        <Button Content="CE" Grid.Column="1" Grid.Row="1" Background="#FFB3B2B2" BorderBrush="#FF121111"/>
+        <Button Content="C" Grid.Column="2" Grid.Row="1" Background="#FFB3B2B2" BorderBrush="#FF121111"/>
+        <Button Content="Ü" Grid.Column="3" Grid.Row="1" Background="#FFB3B2B2" BorderBrush="#FF121111" FontFamily="Symbol"/>
+        <Button Content="1/x" Grid.Column="0" Grid.Row="2" Background="#FFB3B2B2" BorderBrush="#FF121111"/>
+        <Button Content="x²" Grid.Column="1" Grid.Row="2" Background="#FFB3B2B2" BorderBrush="#FF121111"/>
+        <Button Content="ÖC" Grid.Column="2" Grid.Row="2" Background="#FFB3B2B2" BorderBrush="#FF121111" FontFamily="Symbol"/>
+        <Button Content="÷" Grid.Column="3" Grid.Row="2" Background="#FFB3B2B2" BorderBrush="#FF121111"/>
+        <Button Content="7" Grid.Column="0" Grid.Row="3" Background="Teal" BorderBrush="#FF121111"/>
+        <Button Content="8" Grid.Column="1" Grid.Row="3" Background="Teal" BorderBrush="#FF121111"/>
+        <Button Content="9" Grid.Column="2" Grid.Row="3" Background="Teal" BorderBrush="#FF121111"/>
+        <Button Content="*" Grid.Column="3" Grid.Row="3" Background="#FFB3B2B2" BorderBrush="#FF121111"/>
+        <Button Content="4" Grid.Column="0" Grid.Row="4" Background="Teal" BorderBrush="#FF121111"/>
+        <Button Content="5" Grid.Column="1" Grid.Row="4" Background="Teal" BorderBrush="#FF121111"/>
+        <Button Content="6" Grid.Column="2" Grid.Row="4" Background="Teal" BorderBrush="#FF121111"/>
+        <Button Content="-" Grid.Column="3" Grid.Row="4" Background="#FFB3B2B2" BorderBrush="#FF121111"/>
+        <Button Content="1" Grid.Column="0" Grid.Row="5" Background="Teal" BorderBrush="#FF121111"/>
+        <Button Content="2" Grid.Column="1" Grid.Row="5" Background="Teal" BorderBrush="#FF121111"/>
+        <Button Content="3" Grid.Column="2" Grid.Row="5" Background="Teal" BorderBrush="#FF121111"/>
+        <Button Content="+" Grid.Column="3" Grid.Row="5" Background="#FFB3B2B2" BorderBrush="#FF121111"/>
+        <Button Content="+/-" Grid.Column="0" Grid.Row="6" Background="#FFEFEFEF" BorderBrush="#FF121111"/>
+        <Button Content="0" Grid.Column="1" Grid.Row="6" Background="Teal" BorderBrush="#FF121111"/>
+        <Button Content="." Grid.Column="2" Grid.Row="6" Background="#FFEFEFEF" BorderBrush="#FF121111"/>
+        <Button Content="=" Grid.Column="3" Grid.Row="6" Background="#FFB3B2B2" BorderBrush="#FF121111"/>
+
+    </Grid>
+</Window>
